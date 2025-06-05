@@ -16,33 +16,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav
-      style={{
-        width: '100%',             // full width
-        padding: '1rem',
-        backgroundColor: '#fff',
-        borderBottom: '1px solid #ccc',
-        boxSizing: 'border-box',   // ensure padding doesn’t push it over 100%
-      }}
-    >
-      <Link
-        to="/"
-        style={{
-          ...linkBase,
-          ...(location.pathname === '/' ? activeStyle : {}),
-        }}
-      >
-        Home
-      </Link>
-      <Link
-        to="/contact"
-        style={{
-          ...linkBase,
-          ...(location.pathname === '/contact' ? activeStyle : {}),
-        }}
-      >
-        Contact
-      </Link>
+    <nav style={{width: '100%',padding: '1rem',backgroundColor: '#fff',borderBottom: '1px solid #ccc',boxSizing: 'border-box',}}>
+      <Link to="/"style={{...linkBase,...(location.pathname === '/' ? activeStyle : {}),}}> Home </Link>
+      <Link to="/about" style={{...linkBase,...(location.pathname === '/about' ? activeStyle : {}),}}> About Us </Link>
+      <Link to="/contact" style={{...linkBase,...(location.pathname === '/contact' ? activeStyle : {}),}}> Contact </Link>
     </nav>
   );
 };
