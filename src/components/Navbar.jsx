@@ -20,6 +20,11 @@ const Navbar = () => {
       <Link to="/"style={{...linkBase,...(location.pathname === '/' ? activeStyle : {}),}}> Home </Link>
       <Link to="/about" style={{...linkBase,...(location.pathname === '/about' ? activeStyle : {}),}}> About Us </Link>
       <Link to="/contact" style={{...linkBase,...(location.pathname === '/contact' ? activeStyle : {}),}}> Contact </Link>
+      <Link to="/register" style={{...linkBase,...(location.pathname === '/register' ? activeStyle : {}),}}> Register </Link>
+      <Link to="/login" style={{...linkBase,...(location.pathname === '/login' ? activeStyle : {}),}}> Login </Link>
+      <Link to="/account" style={{...linkBase,...(location.pathname === '/account' ? activeStyle : {}),}}> Account </Link>
+      <Link to="/logout" style={{...linkBase,...(location.pathname === '/logout' ? activeStyle : {}),}}> Logout </Link>
+
     </nav>
   );
 };
