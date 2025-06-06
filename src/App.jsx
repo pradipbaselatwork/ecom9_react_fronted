@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import Register from './components/Register';
 import Login from './components/Login';
 import Account from './components/Account';
+import Cart from './components/Cart';
 import Logout from './components/Logout';
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/account" element={<Account />} />
+          <Route path="/cart" element={<Cart />} />
           <Route path="/logout" element={<Logout />} />
         </Routes>
       </main>
